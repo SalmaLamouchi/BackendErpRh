@@ -1,0 +1,206 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5050"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/personnels",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/PersonnelS/GetPersonnels",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5052
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/personnels/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/PersonnelS/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5052
+        }
+      ]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/PersonnelsMaj",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/PersonnelsMaj/AddC",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5051
+        }
+      ]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/UpdC",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/PersonnelsMaj/UpdC",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5051
+        }
+      ]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/DelClt/{Idpersonnel}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamPathTemplate": "/PersonnelsMaj/DelClt/{Idpersonnel}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5051
+        }
+      ]
+    },
+
+    //congeSelect 5054
+    {
+      "UpstreamPathTemplate": "/gateway/conges",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/CongeS/GetConges",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5054
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/conges/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/CongeS/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5054
+        }
+      ]
+    },
+
+    //CongeMaj 5053
+    {
+      "UpstreamPathTemplate": "/gateway/CongesMaj",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/CongesMaj/AddConge",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5053
+        }
+      ]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/UpdConge",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/CongesMaj/UpdConge",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5053
+        }
+      ]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/DelConge/{Idconge}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamPathTemplate": "/CongesMaj/DelConge/{Idconge}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5053
+        }
+      ]
+    },
+
+    //paiement Select 
+
+    {
+      "UpstreamPathTemplate": "/gateway/paies",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/PaieS/GetPaies",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5055
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/paies/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/PaieS/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5055
+        }
+      ]
+    },
+    //PaiesMaj
+
+    {
+      "UpstreamPathTemplate": "/gateway/PaiesMaj",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/PaiesMaj/AddPaie",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5056
+        }
+      ]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/UpdPaie",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/PaiesMaj/UpdPaie",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5056
+        }
+      ]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/DelPaie/{Idpaie}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamPathTemplate": "/PaiesMaj/DelPaie/{Idpaie}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5056
+        }
+      ]
+    }
+
+
+
+  ]
+}
